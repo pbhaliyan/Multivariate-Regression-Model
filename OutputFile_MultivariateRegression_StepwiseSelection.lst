@@ -1,0 +1,550 @@
+*------------------------------------------------------------*
+User:                u59416513
+Date:                March 12, 2022
+Time:                14:07:49
+*------------------------------------------------------------*
+* Training Output
+*------------------------------------------------------------*
+ 
+ 
+ 
+ 
+Variable Summary
+ 
+          Measurement    Frequency
+ Role        Level         Count
+ 
+INPUT      INTERVAL          11
+TARGET     INTERVAL           1
+ 
+ 
+ 
+ 
+Predicted and decision variables
+ 
+Type         Variable         Label
+ 
+TARGET        medv
+PREDICTED     P_medv     Predicted: medv
+RESIDUAL      R_medv     Residual: medv
+ 
+ 
+ 
+ 
+ 
+The DMREG Procedure
+ 
+               Model Information
+ 
+Training Data Set             WORK.EM_DMREG.VIEW
+DMDB Catalog                  WORK.REG_DMDB
+Target Variable               medv
+Target Measurement Level      Interval
+Error                         Normal
+Link Function                 Identity
+Number of Model Parameters    12
+Number of Observations        253
+ 
+ 
+ 
+ 
+Stepwise Selection Procedure
+ 
+ 
+Step 0: Intercept entered.
+ 
+ 
+                             Analysis of Variance
+ 
+                                   Sum of
+Source                 DF         Squares     Mean Square    F Value    Pr > F
+ 
+Model                   0               0               .        .       .
+Error                 252           16652       66.079567
+Corrected Total       252           16652
+ 
+ 
+              Model Fit Statistics
+ 
+R-Square        0.0000     Adj R-Sq        0.0000
+AIC          1061.2855     BIC          1061.0204
+SBC          1064.8189     C(p)          529.4250
+ 
+ 
+           Analysis of Maximum Likelihood Estimates
+ 
+                               Standard
+Parameter    DF    Estimate       Error    t Value    Pr > |t|
+ 
+Intercept     1     21.7526      0.5111      42.56      <.0001
+ 
+ 
+Step 1: Effect lstat entered.
+ 
+ 
+                             Analysis of Variance
+ 
+                                   Sum of
+Source                 DF         Squares     Mean Square    F Value    Pr > F
+ 
+Model                   1     8417.133291     8417.133291     256.55    <.0001
+Error                 251     8234.917539       32.808436
+Corrected Total       252           16652
+ 
+ 
+              Model Fit Statistics
+ 
+R-Square        0.5055     Adj R-Sq        0.5035
+AIC           885.1355     BIC           885.5204
+SBC           892.2023     C(p)          136.9426
+ 
+ 
+           Analysis of Maximum Likelihood Estimates
+ 
+                               Standard
+Parameter    DF    Estimate       Error    t Value    Pr > |t|
+ 
+Intercept     1     32.6147      0.7678      42.48      <.0001
+lstat         1     -0.8303      0.0518     -16.02      <.0001
+ 
+ 
+Step 2: Effect rm entered.
+ 
+ 
+                             Analysis of Variance
+ 
+                                   Sum of
+Source                 DF         Squares     Mean Square    F Value    Pr > F
+ 
+Model                   2     9582.591844     4791.295922     169.44    <.0001
+Error                 250     7069.458986       28.277836
+Corrected Total       252           16652
+ 
+ 
+              Model Fit Statistics
+ 
+R-Square        0.5755     Adj R-Sq        0.5721
+AIC           848.5279     BIC           848.9978
+SBC           859.1281     C(p)           84.3215
+ 
+ 
+           Analysis of Maximum Likelihood Estimates
+ 
+                               Standard
+Parameter    DF    Estimate       Error    t Value    Pr > |t|
+ 
+Intercept     1      3.8870      4.5312       0.86      0.3918
+lstat         1     -0.5875      0.0612      -9.60      <.0001
+rm            1      4.1042      0.6393       6.42      <.0001
+ 
+ 
+Step 3: Effect ptratio entered.
+ 
+ 
+                             Analysis of Variance
+ 
+                                   Sum of
+Source                 DF         Squares     Mean Square    F Value    Pr > F
+ 
+Model                   3           10384     3461.478781     137.52    <.0001
+Error                 249     6267.614488       25.171143
+Corrected Total       252           16652
+ 
+ 
+              Model Fit Statistics
+ 
+R-Square        0.6236     Adj R-Sq        0.6191
+AIC           820.0697     BIC           820.9216
+SBC           834.2032     C(p)           48.7418
+ 
+ 
+           Analysis of Maximum Likelihood Estimates
+ 
+                               Standard
+Parameter    DF    Estimate       Error    t Value    Pr > |t|
+ 
+Intercept     1     22.1809      5.3649       4.13      <.0001
+lstat         1     -0.5242      0.0588      -8.91      <.0001
+ptratio       1     -0.8821      0.1563      -5.64      <.0001
+rm            1      3.6624      0.6082       6.02      <.0001
+ 
+ 
+Step 4: Effect black entered.
+ 
+ 
+                             Analysis of Variance
+ 
+                                   Sum of
+Source                 DF         Squares     Mean Square    F Value    Pr > F
+ 
+Model                   4           10582     2645.443707     108.08    <.0001
+Error                 248     6070.276000       24.476919
+Corrected Total       252           16652
+ 
+ 
+              Model Fit Statistics
+ 
+R-Square        0.6355     Adj R-Sq        0.6296
+AIC           813.9758     BIC           814.8443
+SBC           831.6427     C(p)           41.4932
+ 
+ 
+           Analysis of Maximum Likelihood Estimates
+ 
+                               Standard
+Parameter    DF    Estimate       Error    t Value    Pr > |t|
+ 
+Intercept     1     14.1698      5.9957       2.36      0.0189
+black         1      0.0101     0.00356       2.84      0.0049
+lstat         1     -0.4545      0.0630      -7.22      <.0001
+ptratio       1     -0.8277      0.1553      -5.33      <.0001
+rm            1      4.0640      0.6162       6.60      <.0001
+ 
+ 
+Step 5: Effect dis entered.
+ 
+ 
+                             Analysis of Variance
+ 
+                                   Sum of
+Source                 DF         Squares     Mean Square    F Value    Pr > F
+ 
+Model                   5           10686     2137.178502      88.48    <.0001
+Error                 247     5966.158318       24.154487
+Corrected Total       252           16652
+ 
+ 
+              Model Fit Statistics
+ 
+R-Square        0.6417     Adj R-Sq        0.6345
+AIC           811.5987     BIC           812.4384
+SBC           832.7990     C(p)           38.6135
+ 
+ 
+           Analysis of Maximum Likelihood Estimates
+ 
+                               Standard
+Parameter    DF    Estimate       Error    t Value    Pr > |t|
+ 
+Intercept     1     17.9616      6.2298       2.88      0.0043
+black         1      0.0108     0.00355       3.03      0.0027
+dis           1     -0.3737      0.1800      -2.08      0.0389
+lstat         1     -0.5147      0.0690      -7.46      <.0001
+ptratio       1     -0.8776      0.1561      -5.62      <.0001
+rm            1      3.9219      0.6160       6.37      <.0001
+ 
+ 
+Step 6: Effect nox entered.
+ 
+ 
+                             Analysis of Variance
+ 
+                                   Sum of
+Source                 DF         Squares     Mean Square    F Value    Pr > F
+ 
+Model                   6           11124     1854.033187      82.51    <.0001
+Error                 246     5527.851706       22.470942
+Corrected Total       252           16652
+ 
+ 
+              Model Fit Statistics
+ 
+R-Square        0.6680     Adj R-Sq        0.6599
+AIC           794.2938     BIC           795.9646
+SBC           819.0275     C(p)           20.0716
+ 
+ 
+           Analysis of Maximum Likelihood Estimates
+ 
+                               Standard
+Parameter    DF    Estimate       Error    t Value    Pr > |t|
+ 
+Intercept     1     33.5867      6.9730       4.82      <.0001
+black         1     0.00867     0.00346       2.51      0.0128
+dis           1     -1.0426      0.2304      -4.53      <.0001
+lstat         1     -0.4594      0.0677      -6.79      <.0001
+nox           1    -18.6925      4.2324      -4.42      <.0001
+ptratio       1     -0.9458      0.1514      -6.25      <.0001
+rm            1      3.7005      0.5962       6.21      <.0001
+ 
+ 
+Step 7: Effect zn entered.
+ 
+ 
+                             Analysis of Variance
+ 
+                                   Sum of
+Source                 DF         Squares     Mean Square    F Value    Pr > F
+ 
+Model                   7           11324     1617.735037      74.39    <.0001
+Error                 245     5327.905572       21.746553
+Corrected Total       252           16652
+ 
+ 
+              Model Fit Statistics
+ 
+R-Square        0.6800     Adj R-Sq        0.6709
+AIC           786.9730     BIC           789.1840
+SBC           815.2401     C(p)           12.7008
+ 
+ 
+           Analysis of Maximum Likelihood Estimates
+ 
+                               Standard
+Parameter    DF    Estimate       Error    t Value    Pr > |t|
+ 
+Intercept     1     34.2829      6.8635       4.99      <.0001
+black         1     0.00926     0.00341       2.72      0.0070
+dis           1     -1.4602      0.2652      -5.51      <.0001
+lstat         1     -0.4685      0.0666      -7.03      <.0001
+nox           1    -19.0021      4.1649      -4.56      <.0001
+ptratio       1     -0.8117      0.1554      -5.22      <.0001
+rm            1      3.3546      0.5975       5.61      <.0001
+zn            1      0.0575      0.0190       3.03      0.0027
+ 
+ 
+Step 8: Effect age entered.
+ 
+ 
+                             Analysis of Variance
+ 
+                                   Sum of
+Source                 DF         Squares     Mean Square    F Value    Pr > F
+ 
+Model                   8           11412     1426.442942      66.42    <.0001
+Error                 244     5240.507297       21.477489
+Corrected Total       252           16652
+ 
+ 
+              Model Fit Statistics
+ 
+R-Square        0.6853     Adj R-Sq        0.6750
+AIC           784.7884     BIC           787.3285
+SBC           816.5889     C(p)           10.6048
+ 
+ 
+           Analysis of Maximum Likelihood Estimates
+ 
+                               Standard
+Parameter    DF    Estimate       Error    t Value    Pr > |t|
+ 
+Intercept     1     33.0861      6.8466       4.83      <.0001
+age           1     -0.0385      0.0191      -2.02      0.0448
+black         1     0.00986     0.00340       2.90      0.0041
+dis           1     -1.6139      0.2744      -5.88      <.0001
+lstat         1     -0.4161      0.0711      -5.85      <.0001
+nox           1    -16.4605      4.3266      -3.80      0.0002
+ptratio       1     -0.7823      0.1551      -5.04      <.0001
+rm            1      3.6196      0.6082       5.95      <.0001
+zn            1      0.0527      0.0190       2.77      0.0060
+ 
+ 
+NOTE: No (additional) effects met the 0.05 significance level for entry into the model.
+ 
+ 
+               Summary of Stepwise Selection
+ 
+            Effect             Number
+    Step    Entered      DF        In    F Value    Pr > F
+ 
+       1    lstat         1         1     256.55    <.0001
+       2    rm            1         2      41.21    <.0001
+       3    ptratio       1         3      31.86    <.0001
+       4    black         1         4       8.06    0.0049
+       5    dis           1         5       4.31    0.0389
+       6    nox           1         6      19.51    <.0001
+       7    zn            1         7       9.19    0.0027
+       8    age           1         8       4.07    0.0448
+ 
+ 
+The selected model is the model trained in the last step (Step 8). It consists of the following effects:
+ 
+Intercept  age  black  dis  lstat  nox  ptratio  rm  zn
+ 
+ 
+                             Analysis of Variance
+ 
+                                   Sum of
+Source                 DF         Squares     Mean Square    F Value    Pr > F
+ 
+Model                   8           11412     1426.442942      66.42    <.0001
+Error                 244     5240.507297       21.477489
+Corrected Total       252           16652
+ 
+ 
+              Model Fit Statistics
+ 
+R-Square        0.6853     Adj R-Sq        0.6750
+AIC           784.7884     BIC           787.3285
+SBC           816.5889     C(p)           10.6048
+ 
+ 
+           Analysis of Maximum Likelihood Estimates
+ 
+                               Standard
+Parameter    DF    Estimate       Error    t Value    Pr > |t|
+ 
+Intercept     1     33.0861      6.8466       4.83      <.0001
+age           1     -0.0385      0.0191      -2.02      0.0448
+black         1     0.00986     0.00340       2.90      0.0041
+dis           1     -1.6139      0.2744      -5.88      <.0001
+lstat         1     -0.4161      0.0711      -5.85      <.0001
+nox           1    -16.4605      4.3266      -3.80      0.0002
+ptratio       1     -0.7823      0.1551      -5.04      <.0001
+rm            1      3.6196      0.6082       5.95      <.0001
+zn            1      0.0527      0.0190       2.77      0.0060
+
+
+*------------------------------------------------------------*
+* Score Output
+*------------------------------------------------------------*
+
+
+*------------------------------------------------------------*
+* Report Output
+*------------------------------------------------------------*
+ 
+ 
+ 
+ 
+Fit Statistics
+ 
+Target=medv Target Label=' '
+ 
+   Fit
+Statistics    Statistics Label                    Train    Validation       Test
+ 
+ _AIC_        Akaike's Information Criterion     784.79          .           .
+ _ASE_        Average Squared Error               20.71        22.29       58.17
+ _AVERR_      Average Error Function              20.71        22.29       58.17
+ _DFE_        Degrees of Freedom for Error       244.00          .           .
+ _DFM_        Model Degrees of Freedom             9.00          .           .
+ _DFT_        Total Degrees of Freedom           253.00          .           .
+ _DIV_        Divisor for ASE                    253.00       202.00       51.00
+ _ERR_        Error Function                    5240.51      4501.75     2966.58
+ _FPE_        Final Prediction Error              22.24          .           .
+ _MAX_        Maximum Absolute Error              27.99        15.74       28.78
+ _MSE_        Mean Square Error                   21.48        22.29       58.17
+ _NOBS_       Sum of Frequencies                 253.00       202.00       51.00
+ _NW_         Number of Estimate Weights           9.00          .           .
+ _RASE_       Root Average Sum of Squares          4.55         4.72        7.63
+ _RFPE_       Root Final Prediction Error          4.72          .           .
+ _RMSE_       Root Mean Squared Error              4.63         4.72        7.63
+ _SBC_        Schwarz's Bayesian Criterion       816.59          .           .
+ _SSE_        Sum of Squared Errors             5240.51      4501.75     2966.58
+ _SUMW_       Sum of Case Weights Times Freq     253.00       202.00       51.00
+ 
+ 
+ 
+ 
+Assessment Score Rankings
+ 
+Data Role=TRAIN Target Variable=medv Target Label=' '
+ 
+           Number of       Mean        Mean
+Depth    Observations     Target    Predicted
+ 
+   5          13         41.1615     36.4085
+  10          13         31.3000     32.0344
+  15          12         28.4000     29.9450
+  20          13         27.7308     27.7132
+  25          13         25.7308     26.5023
+  30          12         23.6500     25.4347
+  35          13         23.8000     24.4657
+  40          13         21.6000     23.1663
+  45          12         20.1250     22.3614
+  50          13         24.9154     21.6295
+  55          13         21.0615     20.8984
+  60          12         18.3500     20.2354
+  65          13         20.1923     19.4037
+  70          13         18.7000     18.5168
+  75          12         16.5833     17.7373
+  80          13         16.3692     17.1425
+  85          13         15.5308     15.4755
+  90          12         12.6083     14.1030
+  95          13         14.7462     12.6157
+ 100          12         10.8250      8.1630
+ 
+ 
+Data Role=VALIDATE Target Variable=medv Target Label=' '
+ 
+           Number of       Mean        Mean
+Depth    Observations     Target    Predicted
+ 
+   5          11         47.9364     37.5016
+  10          10         40.0200     34.2306
+  15          10         33.2300     32.7476
+  20          10         31.9100     30.8766
+  25          10         26.0700     28.5475
+  30          10         24.6300     27.2823
+  35          10         23.6200     26.0502
+  40          10         22.0600     24.8891
+  45          10         23.8700     23.9689
+  50          10         22.0800     22.9978
+  55          11         20.4818     21.8343
+  60          10         20.2500     21.1011
+  65          10         19.5900     20.2124
+  70          10         18.6200     18.9433
+  75          10         18.8100     18.0915
+  80          10         15.6000     17.2400
+  85          10         15.7900     16.2268
+  90          10         14.3300     15.1005
+  95          10         12.8000     13.2200
+ 100          10         11.0700      9.7647
+ 
+ 
+ 
+ 
+Assessment Score Distribution
+ 
+Data Role=TRAIN Target Variable=medv Target Label=' '
+ 
+   Range for          Mean        Mean        Number of      Model
+   Predicted         Target    Predicted    Observations     Score
+ 
+39.508 -  41.394    50.0000     40.6428           2         40.4508
+37.623 -  39.508    50.0000     38.7389           1         38.5655
+35.737 -  37.623    42.4333     36.6163           3         36.6801
+33.852 -  35.737    38.0000     34.9919           6         34.7947
+31.967 -  33.852    30.6556     32.5516           9         32.9093
+30.081 -  31.967    31.1500     30.8697          10         31.0239
+28.196 -  30.081    26.0111     29.3948           9         29.1386
+26.311 -  28.196    27.6737     27.2212          19         27.2532
+24.425 -  26.311    24.4320     25.3398          25         25.3678
+22.540 -  24.425    21.7636     23.2781          22         23.4824
+20.654 -  22.540    22.0235     21.4904          34         21.5971
+18.769 -  20.654    19.1483     19.6710          29         19.7117
+16.884 -  18.769    17.2400     17.8199          30         17.8263
+14.998 -  16.884    16.2154     16.0250          13         15.9409
+13.113 -  14.998    13.4889     14.1763          18         14.0555
+11.227 -  13.113    14.6700     12.6742          10         12.1702
+9.342 -  11.227      9.4333     10.1756           6         10.2848
+7.457 -  9.342      10.6250      8.5516           4          8.3994
+5.571 -  7.457       8.8000      5.8026           1          6.5140
+3.686 -  5.571      15.8500      3.7558           2          4.6287
+ 
+ 
+Data Role=VALIDATE Target Variable=medv Target Label=' '
+ 
+   Range for          Mean        Mean        Number of      Model
+   Predicted         Target    Predicted    Observations     Score
+ 
+40.221 -  41.981    49.5000     41.0566           3         41.1012
+36.701 -  38.461    47.4333     37.5132           3         37.5811
+34.941 -  36.701    47.2000     35.2987           6         35.8210
+33.181 -  34.941    39.0000     34.0529          10         34.0610
+31.421 -  33.181    32.2000     32.4387          13         32.3009
+29.661 -  31.421    32.3200     30.4122           5         30.5409
+27.901 -  29.661    26.7167     28.5562          12         28.7808
+26.141 -  27.901    24.2231     26.9689          13         27.0208
+24.381 -  26.141    22.6875     25.2307          16         25.2607
+22.621 -  24.381    23.4118     23.6640          17         23.5007
+20.861 -  22.621    20.4478     21.6416          23         21.7406
+19.101 -  20.861    19.4571     20.0833          14         19.9806
+17.340 -  19.101    18.3143     18.2259          21         18.2205
+15.580 -  17.340    15.0350     16.3454          20         16.4605
+13.820 -  15.580    14.5375     14.5240           8         14.7004
+12.060 -  13.820    12.8000     13.1666           7         12.9404
+10.300 -  12.060    10.4286     11.1007           7         11.1803
+8.540 -  10.300     11.9000      9.5929           1          9.4203
+6.780 -  8.540      12.2000      7.4426           3          7.6602
